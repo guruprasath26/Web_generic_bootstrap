@@ -1,0 +1,33 @@
+/* HEADER */
+header {
+    height: 30vh;
+}
+
+
+/* MAIN */
+main {
+    background: red;
+}
+
+
+main section {
+    background-color: black;
+    /* border-radius: 30px; */
+    /* border-radius: 15%; */
+}
+
+
+/* side card */
+.bg-body-secondary {
+    background-color: white !important;
+    /* margin: 5vh; */
+    margin: 10px;
+    /* border-radius: 30px; */
+    /* border-radius: 10%; */
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 400px;
+    margin: 0;
+}

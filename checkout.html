@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="icon" href="./icons/business/leather.png">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fonts -->
+    <!-- font1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+
+    <!-- ================================================== -->
+
+    <!-- my-styles -->
+    <link rel="stylesheet" href="styles/common-main.css">
+    <link rel="stylesheet" href="styles/common1.css">
+    <link rel="stylesheet" href="styles/style-checkout.css">
+
+    <!-- my-sass -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- my-bootstrap -->
+    <link rel="stylesheet" href="./styles/my-bootstrap.css">
+
+    <!-- my-script -->
+    <!-- <script src="scripts/scriptCheckout.js"></script> -->
+    <!-- <script src="scripts/scriptGetInfo.js"></script> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nkwali Yenkosi</a>
+            <!-- 
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img id="icon-ig" class="icons" src="./icons/socials/ig.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" https://www.facebook.com" target="_blank">
+                            <img class="icons" src="./icons/socials/fb.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img id="icon-twitter" class="icons" src="./icons/socials/twitter.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- offcanvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <!-- <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nkwali Yenkosi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div> -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html" target="_self">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About the Leather</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./diy-methods.html">DIY Methods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./brick-mortar.html">Brick & Mortar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop-now.html">Shop Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="full-bg-img">
+        <div class="overlay center">
+            <h1>Check out</h1>
+        </div>
+    </header>
+
+    <div class="form center">
+        <form action="" method="get" id="form" class="">
+            <!-- user info -->
+            <section id="d-user">
+                <div class="center">
+                    <h2>User info</h2>
+                </div>
+
+                <div class="center">
+                    <div class="form-floating mb-3">
+                        <input required type="text" class="form-control" id="name" placeholder="Name">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <div class="form-floating mb-3">
+                        <input required type="email" class="form-control" id="email" placeholder="Email">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <div class="form-floating">
+                        <input required type="text" class="form-control" id="phone-num" placeholder="Phone number">
+                        <label for="floatingPassword">Phone number</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- shipping info -->
+            <section id="d-shipping">
+                <div class="center">
+                    <h2>Shipping info</h2>
+                </div>
+
+                <div class="center">
+                    <div class="form-floating">
+                        <input required type="text" class="form-control" id="floatingPassword" placeholder="Province">
+                        <label for="floatingPassword">Province</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input required type="text" class="form-control" id="floatingInput" placeholder="City">
+                        <label for="floatingInput">City</label>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <div class="form-floating mb-3">
+                        <input required type="text" class="form-control" id="floatingInput" placeholder="Suburban area">
+                        <label for="floatingInput">Suburban area</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <input required type="text" class="form-control" id="floatingPassword"
+                            placeholder="Complete address">
+                        <label for="floatingPassword">Complete address</label>
+                    </div>
+                </div>
+
+
+                <div class="center">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Special instructions</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- billing details -->
+            <section id="d-bill">
+                <div class="center">
+                    <h2>Billing details</h2>
+                </div>
+
+                <div class="center">
+                    <div class="form-floating mb-3">
+                        <input required type="text" class="form-control" id="floatingInput" placeholder="Name on card">
+                        <label for="floatingInput">Name on card</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input required type="text" class="form-control" id="floatingInput"
+                            placeholder="Credit card number">
+                        <label for="floatingInput">Credit card number</label>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <div class="form-floating">
+                        <input required type="text" class="form-control" id="floatingPassword"
+                            placeholder="Expire date">
+                        <label for="floatingPassword">Expire date</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <input required type="text" class="form-control" id="floatingPassword" placeholder="CVV">
+                        <label for="floatingPassword">CVV</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- confirmation -->
+            <section id="confirmation">
+                <p>Do you agree to our <a href="terms-of-service.html">Terms of serivice</a>? </p>
+                <div class="form-check">
+                    <input required class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        No
+                    </label>
+                </div>
+            </section>
+
+            <div class="center">
+                <!-- <button id="submit" type="submit" onsubmit="showI()">Place order</button> -->
+                <!-- <button id="submit" type="submit">Place order</button> -->
+
+                <button id="submit" type="submit" onsubmit="orderComplete()">Ship off</button>
+                <!-- onclick="orderComplete()" -->
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

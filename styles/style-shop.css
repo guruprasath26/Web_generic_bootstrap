@@ -1,0 +1,78 @@
+:root {
+    --bg: rgb(45, 4, 4);
+}
+
+/* BODY */
+body {
+    background-color: var(--bg);
+}
+
+
+/* HEADER */
+header h1 {
+    font-family: 'Zeyada';
+}
+
+
+/* MAIN */
+main {
+    background-color: var(--bg);
+    /* box-shadow: inset 1px 1px 20px black; */
+    margin-bottom: 5vh;
+}
+
+main h2 {
+    font-size: 70px;
+    font-family: 'Zeyada';
+    padding: 20px 10px;
+    color: white;
+}
+
+/* image */
+main img {
+    padding: 12px;
+    /* width: 200px;
+    height: 200px;
+    object-fit: cover; */
+
+    /* filter: sepia(); */
+    /* filter: opacity(0.7); */
+    /* filter: grayscale(); */
+    transition: 800ms ease;
+    /* cursor: pointer; */
+}
+
+/* main img:hover {
+    transform: scale(0.9);
+    filter: none;
+    /* border-radius: 30px; */
+/* border: 3px solid black; */
+/* padding: 0; 
+} */
+
+/* ========================================== */
+
+/* modal input */
+#qty::placeholder {
+    color: black;
+}
+
+/* ========================================== */
+#go-to-checkout button {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 8vh;
+}
+
+#go-to-checkout button:hover {
+    box-shadow: 1px 1px 10px white;
+}
+
+/* ========================================== */
+.card button {
+    border-radius: 50%;
+    padding: 22px;
+}
+
+/* ========================================== */
